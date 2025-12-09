@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movie Collection Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: system-ui, Arial; max-width: 900px; margin: 28px auto; padding: 0 16px; color: #111; }
+    h1, h2 { margin-bottom: 8px; }
+    form { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+    input[type="text"], input[type="number"] { padding:8px; border:1px solid #ccc; border-radius:6px; min-width:140px; }
+    button { padding:8px 12px; border-radius:6px; border: none; cursor:pointer; }
+    .movie-item { border:1px solid #eee; padding:10px; margin-bottom:8px; border-radius:8px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .left { display:flex; flex-direction:column; }
+    .controls { display:flex; gap:8px; }
+    .small { padding:6px 8px; font-size:0.9rem; }
+    #search-input { width:100%; padding:8px; margin-bottom:12px; border-radius:6px; border:1px solid #ccc; }
+    @media(min-width:640px){ form input[type="text"], form input[type="number"]{ min-width:220px; } }
+  </style>
+</head>
+<body>
+  <h1>Movie Collection Manager</h1>
+
+  <form id="add-movie-form" autocomplete="off">
+    <input type="text" id="title" placeholder="Title" required />
+    <input type="text" id="genre" placeholder="Genre" />
+    <input type="number" id="year" placeholder="Release Year" required />
+    <button type="submit">Add Movie</button>
+  </form>
+
+  <h2>Movie List</h2>
+  <input type="text" id="search-input" placeholder="Search movies by title or genre">
+
+  <div id="movie-list" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

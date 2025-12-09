@@ -1,0 +1,133 @@
+/* ===== PAGE STYLE ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eef1f7;
+  margin: 0;
+  padding: 20px;
+  max-width: 850px;
+  margin: auto;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  text-align: center;
+  color: #333;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-top: 30px;
+}
+
+/* ===== FORM SECTION ===== */
+form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5b8af0;
+  box-shadow: 0 0 5px rgba(91, 138, 240, 0.4);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 12px 20px;
+  background: #5b8af0;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #3f6bd9;
+}
+
+/* ===== SEARCH BAR ===== */
+#search-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #5b8af0;
+  box-shadow: 0 0 5px rgba(91, 138, 240, 0.4);
+}
+
+/* ===== MOVIE ITEM CARD ===== */
+#movie-list div {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-left: 4px solid #5b8af0;
+  transition: 0.2s ease;
+}
+
+#movie-list div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+}
+
+/* ===== EDIT & DELETE BUTTONS ===== */
+#movie-list button {
+  padding: 9px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+#movie-list button:first-of-type {
+  background: #00c853;
+}
+
+#movie-list button:first-of-type:hover {
+  background: #00a046;
+}
+
+#movie-list button:last-of-type {
+  background: #ff5252;
+}
+
+#movie-list button:last-of-type:hover {
+  background: #ff2e2e;
+}
+
+/* ===== MOBILE FRIENDLY ===== */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
